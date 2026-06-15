@@ -36,8 +36,6 @@
       margin-top: 12px;
     }
     .container { max-width: 860px; margin: 0 auto; padding: 30px 20px; }
-
-    /* Промокоды */
     .promo-block {
       background: white;
       border-radius: 16px;
@@ -45,11 +43,7 @@
       margin-bottom: 30px;
       box-shadow: 0 2px 12px rgba(0,0,0,0.07);
     }
-    .promo-block h2 {
-      font-size: 1.3rem;
-      margin-bottom: 20px;
-      color: #c1121f;
-    }
+    .promo-block h2 { font-size: 1.3rem; margin-bottom: 20px; color: #c1121f; }
     .promo-card {
       border: 2px dashed #e63946;
       border-radius: 12px;
@@ -79,11 +73,7 @@
       color: #1a1a2e;
       letter-spacing: 1px;
     }
-    .promo-info .desc {
-      font-size: 0.85rem;
-      color: #666;
-      margin-top: 4px;
-    }
+    .promo-info .desc { font-size: 0.85rem; color: #666; margin-top: 4px; }
     .copy-btn {
       background: #e63946;
       color: white;
@@ -98,8 +88,6 @@
     }
     .copy-btn:hover { background: #c1121f; }
     .copy-btn.copied { background: #2d6a4f; }
-
-    /* Калькулятор */
     .calc-block {
       background: white;
       border-radius: 16px;
@@ -147,18 +135,8 @@
       padding: 16px 20px;
       display: none;
     }
-    .calc-result .economy {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: #2d6a4f;
-    }
-    .calc-result .final {
-      font-size: 1rem;
-      color: #555;
-      margin-top: 4px;
-    }
-
-    /* Статьи */
+    .calc-result .economy { font-size: 1.5rem; font-weight: 700; color: #2d6a4f; }
+    .calc-result .final { font-size: 1rem; color: #555; margin-top: 4px; }
     .articles-block {
       background: white;
       border-radius: 16px;
@@ -168,7 +146,7 @@
     }
     .articles-block h2 { font-size: 1.3rem; margin-bottom: 20px; color: #c1121f; }
     .article-card {
-      display: block;
+      display: flex;
       text-decoration: none;
       color: inherit;
       border: 1px solid #eee;
@@ -176,7 +154,6 @@
       padding: 16px 20px;
       margin-bottom: 12px;
       transition: all 0.2s;
-      display: flex;
       align-items: center;
       gap: 14px;
     }
@@ -195,8 +172,6 @@
       white-space: nowrap;
       flex-shrink: 0;
     }
-
-    /* Как применить */
     .steps-block {
       background: white;
       border-radius: 16px;
@@ -205,12 +180,7 @@
       box-shadow: 0 2px 12px rgba(0,0,0,0.07);
     }
     .steps-block h2 { font-size: 1.3rem; margin-bottom: 20px; color: #c1121f; }
-    .step {
-      display: flex;
-      gap: 16px;
-      margin-bottom: 16px;
-      align-items: flex-start;
-    }
+    .step { display: flex; gap: 16px; margin-bottom: 16px; align-items: flex-start; }
     .step-num {
       background: #e63946;
       color: white;
@@ -225,7 +195,6 @@
       font-size: 0.9rem;
     }
     .step-text { padding-top: 5px; line-height: 1.5; }
-
     footer {
       text-align: center;
       padding: 30px 20px;
@@ -233,7 +202,6 @@
       font-size: 0.85rem;
     }
     footer a { color: #e63946; text-decoration: none; }
-
     @media (max-width: 600px) {
       header h1 { font-size: 1.4rem; }
       .promo-card { flex-direction: column; }
@@ -246,15 +214,13 @@
 <header>
   <h1>🔥 Промокод Нетпринт 2026</h1>
   <p>Рабочие коды на скидку — проверяются ежедневно</p>
-  <span class="updated">✅ Обновлено: 13 июня 2026</span>
+  <span class="updated">✅ Обновлено: 15 июня 2026</span>
 </header>
 
 <div class="container">
 
-  <!-- Промокоды -->
   <div class="promo-block">
     <h2>🎟️ Актуальные промокоды на июнь 2026</h2>
-
     <div class="promo-card">
       <div class="promo-info">
         <span class="badge">Новые клиенты</span>
@@ -263,7 +229,6 @@
       </div>
       <button class="copy-btn" onclick="copyCode(this, 'ALL30_96GNWGZQ')">Скопировать</button>
     </div>
-
     <div class="promo-card">
       <div class="promo-info">
         <span class="badge" style="background:#2d6a4f">Постоянные клиенты</span>
@@ -274,7 +239,6 @@
     </div>
   </div>
 
-  <!-- Калькулятор -->
   <div class="calc-block">
     <h2>🧮 Калькулятор экономии</h2>
     <div class="calc-row">
@@ -291,9 +255,26 @@
     </div>
   </div>
 
-  <!-- Статьи -->
   <div class="articles-block">
     <h2>📚 Все статьи</h2>
+
+    <a class="article-card" href="https://netprint-promo.github.io/netprint-promo/15-june-2026">
+      <span class="article-icon">📅</span>
+      <div>
+        <div class="article-title">Промокод Нетпринт 15 июня 2026: начало недели — время оформить заказ</div>
+        <div class="article-desc">Расчёт экономии, сроки доставки, что актуально заказать в середине июня</div>
+      </div>
+      <span class="article-date">15 июн 2026</span>
+    </a>
+
+    <a class="article-card" href="https://netprint-promo.github.io/netprint-promo/14-june-2026">
+      <span class="article-icon">📅</span>
+      <div>
+        <div class="article-title">Промокод Нетпринт 14 июня 2026: выходные — лучшее время для заказа</div>
+        <div class="article-desc">Что заказать в субботу, расчёт экономии, форматы которые стоит попробовать</div>
+      </div>
+      <span class="article-date">14 июн 2026</span>
+    </a>
 
     <a class="article-card" href="https://netprint-promo.github.io/netprint-promo/13-june-2026">
       <span class="article-icon">📅</span>
@@ -342,7 +323,6 @@
 
   </div>
 
-  <!-- Как применить -->
   <div class="steps-block">
     <h2>⚡ Как применить промокод</h2>
     <div class="step">
